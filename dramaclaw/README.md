@@ -1,14 +1,14 @@
-# DNY-AIGC
+# DNY-AIGC · aplikasi
 
-Sistem AIGC mandiri untuk produksi video (naskah → storyboard → aset → video).
+Kode runtime Community Edition untuk **DNY-AIGC**.
 
-## Mulai cepat
+Ringkasan produk, arsitektur, dan panduan tingkat repo: lihat [README root](../README.md).
+
+## Mulai di folder ini
 
 ```bash
 cp .env.example .env
 docker compose up -d --build
 ```
 
-Buka UI di `http://localhost:8080`.
-
-Dokumentasi lokal: [docs/id/getting-started/quickstart.md](docs/id/getting-started/quickstart.md).
+UI: http://localhost:8080 · Docs: [docs/id/getting-started/quickstart.md](docs/id/getting-started/quickstart.md)

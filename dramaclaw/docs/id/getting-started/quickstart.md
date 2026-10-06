@@ -15,10 +15,10 @@ DNY adalah Community Edition (CE): berjalan di satu mesin tanpa PostgreSQL / Red
 ## Langkah
 
 ```bash
-# 1. Ambil kode — DNY dan gateway bawaan, berdampingan
-git clone https://github.com/dramaclaw/dramaclaw.git
-git clone https://github.com/dramaclaw/dramaclaw-gateway.git
-cd dramaclaw
+# 1. Ambil kode DNY-AIGC
+git clone https://github.com/mydenflix/DNY-AIGC.git
+cd DNY-AIGC/dramaclaw
+#    (Opsional) checkout gateway di ../../dramaclaw-gateway atau set DNY_AIGC_GATEWAY_SRC
 
 # 2. Siapkan konfigurasi
 cp .env.example .env
