@@ -3,9 +3,9 @@
 
 # Installation Guide
 
-> Set up the runtime environment for DramaClaw CE on macOS / Windows / Linux. If you just want the fastest path to running it, go straight to [Quickstart](quickstart.md); this guide covers per-platform prerequisites and the two installation methods (Docker and local development).
+> Set up the runtime environment for DNY-AIGC CE on macOS / Windows / Linux. If you just want the fastest path to running it, go straight to [Quickstart](quickstart.md); this guide covers per-platform prerequisites and the two installation methods (Docker and local development).
 
-DramaClaw CE is a single-machine service that needs **no PostgreSQL / Redis**. Docker brings up `api` + the bundled `newapi` gateway + `web`; models are served through the DramaClaw official gateway RelayClaw by default, or through the bundled gateway once you switch to Custom mode in Settings. Nothing runs models on your machine, so an ordinary machine is enough.
+DNY-AIGC CE is a single-machine service that needs **no PostgreSQL / Redis**. Docker brings up `api` + the bundled `newapi` gateway + `web`; models are served through the DNY-AIGC official gateway RelayClaw by default, or through the bundled gateway once you switch to Custom mode in Settings. Nothing runs models on your machine, so an ordinary machine is enough.
 
 ## Pick one of two installation methods
 
@@ -31,9 +31,9 @@ Prerequisites: Docker + `docker compose`.
 Once installed:
 
 ```bash
-git clone https://github.com/dramaclaw/dramaclaw.git
-git clone https://github.com/dramaclaw/dramaclaw-gateway.git   # bundled gateway, built from ../dramaclaw-gateway
-cd dramaclaw
+git clone https://github.com/mydenflix/DNY-AIGC.git
+# gateway: place checkout at ../gateway (or set DNY_AIGC_GATEWAY_SRC)   # bundled gateway, built from ../gateway
+cd DNY-AIGC/app
 cp .env.example .env        # at minimum, change PROMPT_EXPORT_PASSWORD to a non-default value
 docker compose up -d --build    # builds api, web and the gateway from the two checkouts
 # no build? docker compose -f docker-compose.release.yml up -d   # pulls published images, no gateway clone needed
@@ -60,8 +60,8 @@ After it's up, open **`http://localhost:8080`** in your browser (the app UI); th
 ### 2. Install dependencies and start
 
 ```bash
-git clone https://github.com/dramaclaw/dramaclaw.git
-cd dramaclaw
+git clone https://github.com/mydenflix/DNY-AIGC.git
+cd DNY-AIGC/app
 
 uv sync                                  # install dependencies into .venv per uv.lock
 cp .env.example .env && $EDITOR .env     # set the gateway and key

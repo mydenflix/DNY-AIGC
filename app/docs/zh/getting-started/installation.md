@@ -3,9 +3,9 @@
 
 # 安装指南
 
-> 在 macOS / Windows / Linux 上装好 DramaClaw CE 的运行环境。只想最快跑起来,直接看 [快速开始](quickstart.md);本篇覆盖各平台前置与本地开发两种装法。
+> 在 macOS / Windows / Linux 上装好 DNY-AIGC CE 的运行环境。只想最快跑起来,直接看 [快速开始](quickstart.md);本篇覆盖各平台前置与本地开发两种装法。
 
-DramaClaw CE 是单机服务,**无需 PostgreSQL / Redis**。Docker 起 `api` + 内置 `newapi` 网关 + `web`;模型默认走 DramaClaw 官方网关 RelayClaw,在设置页切到自定义模式后走内置网关。本机不跑模型,普通机器即可。
+DNY-AIGC CE 是单机服务,**无需 PostgreSQL / Redis**。Docker 起 `api` + 内置 `newapi` 网关 + `web`;模型默认走 DNY-AIGC 官方网关 RelayClaw,在设置页切到自定义模式后走内置网关。本机不跑模型,普通机器即可。
 
 ## 两种装法选一
 
@@ -31,9 +31,9 @@ DramaClaw CE 是单机服务,**无需 PostgreSQL / Redis**。Docker 起 `api` + 
 装好后:
 
 ```bash
-git clone https://github.com/dramaclaw/dramaclaw.git
-git clone https://github.com/dramaclaw/dramaclaw-gateway.git   # 内置网关，从 ../dramaclaw-gateway 构建
-cd dramaclaw
+git clone https://github.com/mydenflix/DNY-AIGC.git
+# gateway: place checkout at ../gateway (or set DNY_AIGC_GATEWAY_SRC)   # 内置网关，从 ../gateway 构建
+cd DNY-AIGC/app
 cp .env.example .env        # 至少把 PROMPT_EXPORT_PASSWORD 改成非默认值
 docker compose up -d --build    # 用两个 checkout 从源码构建 api、web 与网关
 # 免构建：docker compose -f docker-compose.release.yml up -d   # 拉已发布镜像，不需要 clone 网关
@@ -60,8 +60,8 @@ docker compose up -d --build    # 用两个 checkout 从源码构建 api、web �
 ### 2. 装依赖并启动
 
 ```bash
-git clone https://github.com/dramaclaw/dramaclaw.git
-cd dramaclaw
+git clone https://github.com/mydenflix/DNY-AIGC.git
+cd DNY-AIGC/app
 
 uv sync                                  # 按 uv.lock 装依赖到 .venv
 cp .env.example .env && $EDITOR .env     # 填网关与 Key

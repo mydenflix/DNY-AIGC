@@ -24,6 +24,7 @@ services:
     image: dny-aigc-local/gateway
     build:
       # Prefer DNY_AIGC_GATEWAY_SRC; fall back to legacy env / sibling folders.
+      # ../gateway (disarankan) atau ../dramaclaw-gateway (checkout lama) bila junction belum ada.
       context: ${DNY_AIGC_GATEWAY_SRC:-${DRAMACLAW_GATEWAY_SRC:-../gateway}}
       dockerfile: Dockerfile
   web:

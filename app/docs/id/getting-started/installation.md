@@ -31,11 +31,11 @@ Prasyarat: Docker + `docker compose`.
 Setelah terinstal:
 
 ```bash
-git clone https://github.com/dramaclaw/dramaclaw.git
-git clone https://github.com/dramaclaw/dramaclaw-gateway.git   # gateway bawaan, dibangun dari ../dramaclaw-gateway
-cd dramaclaw
+git clone https://github.com/mydenflix/DNY-AIGC.git
+cd DNY-AIGC/app
+# Opsional: checkout gateway di ../gateway (atau set DNY_AIGC_GATEWAY_SRC di .env)
 cp .env.example .env        # setidaknya, ubah PROMPT_EXPORT_PASSWORD ke nilai non-default
-docker compose up -d --build    # membangun api, web, dan gateway dari dua checkout
+docker compose up -d --build    # membangun api, web, dan gateway dari sumber
 # tanpa build? docker compose -f docker-compose.release.yml up -d   # menarik image terpublikasi, tidak perlu clone gateway
 ```
 
@@ -60,8 +60,8 @@ Setelah naik, buka **`http://localhost:8080`** di browser (UI aplikasi); REST AP
 ### 2. Instal dependensi dan jalankan
 
 ```bash
-git clone https://github.com/dramaclaw/dramaclaw.git
-cd dramaclaw
+git clone https://github.com/mydenflix/DNY-AIGC.git
+cd DNY-AIGC/app
 
 uv sync                                  # instal dependensi ke .venv menurut uv.lock
 cp .env.example .env && $EDITOR .env     # atur gateway dan key

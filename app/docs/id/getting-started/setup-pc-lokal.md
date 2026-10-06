@@ -12,8 +12,8 @@ Dokumen ini menyelaraskan [README](../../readme/README_id.md) / [Mulai Cepat](./
 | Windows + Docker Desktop WSL2 | Windows 11 Pro · WSL `docker-desktop` v2 | OK |
 | Docker + Compose | Docker 29.8 · Compose v5.5.1 | OK |
 | Port 8080 / 8780 / 3000 | web · api · newapi | Berjalan |
-| Sibling `dramaclaw-gateway` | `D:\storyboard\dramaclaw-gateway` | Ada |
-| `.env` (PROMPT_EXPORT_PASSWORD non-default) | `dramaclaw/.env` | Ada |
+| Sibling gateway | `D:\storyboard\gateway` (→ checkout gateway) | Ada |
+| `.env` (PROMPT_EXPORT_PASSWORD non-default) | `app/.env` | Ada |
 | Git / Node 20+ / pnpm / uv / ffmpeg | Terpasang | OK |
 | Python 3.11–3.12 (hanya jalur lokal uv) | Dipasang **3.12** (selain 3.14 sistem) | Dilengkapi |
 | Locale UI Indonesia | `frontend/public/locales/id` · default `id` | OK |
@@ -26,14 +26,14 @@ Dokumen ini menyelaraskan [README](../../readme/README_id.md) / [Mulai Cepat](./
 3. **Fitur world (3DGS / SHARP)** — GPU Anda memenuhi syarat. Aktifkan hanya jika perlu:
 
 ```bash
-cd D:\storyboard\dramaclaw
+cd D:\storyboard\app
 INSTALL_WORLD=1 docker compose up -d --build api
 ```
 
 4. **Pengembangan lokal (opsional)** — setelah Python 3.12 terpasang:
 
 ```bash
-cd D:\storyboard\dramaclaw
+cd D:\storyboard\app
 uv python pin 3.12
 uv sync
 uv run novelvideo api --port 8780
@@ -44,7 +44,7 @@ cd frontend && pnpm install && pnpm dev
 ## Perintah cek cepat
 
 ```bash
-cd D:\storyboard\dramaclaw
+cd D:\storyboard\app
 docker compose ps
 curl http://localhost:8780/api/v1/config
 curl -I http://localhost:8080/locales/id/translation.json
