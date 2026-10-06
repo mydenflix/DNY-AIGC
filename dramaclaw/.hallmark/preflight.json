@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-24",
+  "font_stack": "Geist Variable + Inter Variable fallback + CJK",
+  "palette": "DNY dark workbench #0a0c12 / accent #00bdcf",
+  "motion": "duration-fast/base/slow + ease-out-quint",
+  "spacing": "4pt scale",
+  "framework": "React + Vite + Tailwind v4 + shadcn",
+  "design_system": "DESIGN.md",
+  "preserved": ["cyan accent", "Workbench shell", "dark-first", "Indonesian voice", "routes/handlers"],
+  "introduced": ["Geist as product UI face", "tighter radii", "glass surface polish"]
+}

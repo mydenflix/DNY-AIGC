@@ -1,0 +1,81 @@
+{
+  "enabled": true,
+  "announcements": [
+    {
+      "id": "system-upgrade-2026-09-20",
+      "publishedAt": "2026-09-20T10:49:13+08:00",
+      "pinned": false,
+      "i18n": {
+        "id": {
+          "title": "Harga kredit Seedance 2.5 turun",
+          "body": "Kredit <hl>Seedance 2.5</hl> turun: 480p dari 24 ke <hl>20</hl>/detik, 720p dari 48 ke <hl>40</hl>/detik."
+        },
+        "zh": {
+          "title": "Seedance 2.5 积分价格下调",
+          "body": "Seedance 2.5 的积分消耗即将下调：480p 从 24 调整为 20 积分/秒，720p 从 48 调整为 40 积分/秒。感谢您的支持！"
+        },
+        "en": {
+          "title": "Seedance 2.5 Credit Price Reduction",
+          "body": "We're lowering the credit cost for Seedance 2.5: 480p will change from 24 to 20 credits per second, and 720p from 48 to 40 credits per second. Thank you for your support!"
+        }
+      }
+    },
+    {
+      "id": "system-upgrade-2026-09-10",
+      "publishedAt": "2026-09-10T17:30:00+08:00",
+      "pinned": false,
+      "i18n": {
+        "id": {
+          "title": "Upgrade sistem",
+          "body": "Upgrade sistem <time>10 Sep, 18:00–19:00</time>. Layanan bisa sempat putus. Hindari pakai di jendela itu."
+        },
+        "zh": {
+          "title": "系统升级更新",
+          "body": "系统将于 9月10日18:00-19:00 进行 升级更新 ，期间服务可能出现短暂中断，请避开这个时间段使用。感谢您的理解与支持!"
+        },
+        "en": {
+          "title": "System upgrade",
+          "body": "A system upgrade is scheduled on September 10, between 18:00 and 19:00. The service may be briefly unavailable during that window. Please avoid using the product during this period. Thank you for your understanding!"
+        }
+      }
+    },
+    {
+      "id": "system-upgrade-2026-09-03",
+      "publishedAt": "2026-09-03T16:15:00+08:00",
+      "pinned": false,
+      "i18n": {
+        "id": {
+          "title": "Upgrade sistem",
+          "body": "Upgrade sistem <time>3 Sep, 18:00–19:30</time>. Layanan bisa sempat putus. Hindari pakai di jendela itu."
+        },
+        "zh": {
+          "title": "系统升级更新",
+          "body": "系统将于 9月3日 18:00-19:30 进行 升级更新 ，期间服务可能出现短暂中断，请避开这个时间段使用。感谢您的理解与支持！"
+        },
+        "en": {
+          "title": "System upgrade",
+          "body": "A system upgrade is scheduled on September 3, between 18:00 and 19:30. The service may be briefly unavailable during that window. Please avoid using the product during this period. Thank you for your understanding!"
+        }
+      }
+    },
+    {
+      "id": "channel-release-2026-08-26",
+      "publishedAt": "2026-08-26T17:30:00+08:00",
+      "pinned": false,
+      "i18n": {
+        "id": {
+          "title": "Pembaruan saluran",
+          "body": "<hl>Versi saluran</hl> tayang <time>26 Agu, 18:00–19:00</time>. Hindari pakai di jendela itu."
+        },
+        "zh": {
+          "title": "渠道版本更新",
+          "body": "<hl>渠道版本</hl>即将上线，更新时间在 <time>18:00-19:00</time>，请避开这个时间段使用。敬请期待！"
+        },
+        "en": {
+          "title": "Channel release update",
+          "body": "A channel release is going live on August 26, between 18:00 and 19:00. Please avoid using the product during that window. Stay tuned!"
+        }
+      }
+    }
+  ]
+}

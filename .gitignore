@@ -1,0 +1,30 @@
+# Nested VCS metadata (local only; app is vendored as plain files)
+**/.git/
+**/.git.nested/
+
+# Secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# Dependencies & build artifacts
+**/node_modules/
+**/.pnpm-store/
+**/dist/
+**/build/
+**/.venv/
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+
+# Local runtime / data (DNY-AIGC)
+dramaclaw/state/
+dramaclaw/runtime/
+dramaclaw/output/
+dramaclaw/data/
+dramaclaw/logs/
+dramaclaw/frontend/dist/
+dramaclaw/frontend/public/style-gallery/
+
+# Sibling gateway clone (track separately if needed)
+dramaclaw-gateway/

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DNY">
+  <defs>
+    <linearGradient id="dny-ink" x1="14" y1="12" x2="50" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d4d8e0"/>
+      <stop offset="1" stop-color="#8b919c"/>
+    </linearGradient>
+    <linearGradient id="dny-cyan" x1="18" y1="28" x2="46" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5ee7f2"/>
+      <stop offset="1" stop-color="#00bdcf"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0a0c12"/>
+  <rect x="1.25" y="1.25" width="61.5" height="61.5" rx="12.75" fill="none" stroke="#1f2c34" stroke-width="1.5"/>
+  <text
+    x="32"
+    y="39"
+    text-anchor="middle"
+    font-family="ui-sans-serif, system-ui, Segoe UI, sans-serif"
+    font-size="18"
+    font-weight="700"
+    letter-spacing="0.04em"
+    fill="url(#dny-ink)"
+  >DNY</text>
+  <path fill="url(#dny-cyan)" d="M18 44.5 H46 L48.8 46 L46 47.5 H18 Z"/>
+</svg>

@@ -1,0 +1,57 @@
+[
+  {
+    "date": "2026-09-24",
+    "macrostructure": "Workbench",
+    "theme": "DNY cyan-workbench",
+    "enrichment": "none",
+    "brief": "Hallmark full-app visual redesign: Geist Variable + tighter professional surfaces; no behavior change",
+    "scope": "app",
+    "genre": "modern-minimal",
+    "design_system": "DESIGN.md",
+    "copy_voice": "id-natural-concise",
+    "type": "Geist Variable"
+  },
+  {
+    "date": "2026-09-23",
+    "macrostructure": "Workbench",
+    "theme": "DNY cyan-workbench",
+    "enrichment": "none",
+    "brief": "Rebrand ProyekDrama → DNY + modern AD/cyan logo mark",
+    "scope": "app",
+    "genre": "modern-minimal",
+    "design_system": "DESIGN.md",
+    "copy_voice": "id-natural-concise"
+  },
+  {
+    "date": "2026-09-23",
+    "macrostructure": "Workbench",
+    "theme": "ProyekDrama cyan-workbench",
+    "enrichment": "none",
+    "brief": "Full-stack ID lock: content_rewriter + chat + style_analyzer + AI prompt defaults",
+    "scope": "app",
+    "genre": "modern-minimal",
+    "design_system": "DESIGN.md",
+    "copy_voice": "id-natural-concise"
+  },
+  {
+    "date": "2026-09-23",
+    "macrostructure": "Workbench",
+    "theme": "ProyekDrama cyan-workbench",
+    "enrichment": "none",
+    "brief": "Lock Indonesian copy voice: natural, short, no fluff — DESIGN.md + locale + AI prompts",
+    "scope": "app",
+    "genre": "modern-minimal",
+    "design_system": "DESIGN.md",
+    "copy_voice": "id-natural-concise"
+  },
+  {
+    "date": "2026-09-23",
+    "macrostructure": "Workbench",
+    "theme": "ProyekDrama cyan-workbench",
+    "enrichment": "none",
+    "brief": "Hallmark redesign · modern-minimal app shell + unified cyan accent across product UI",
+    "scope": "app",
+    "genre": "modern-minimal",
+    "design_system": "DESIGN.md"
+  }
+]
