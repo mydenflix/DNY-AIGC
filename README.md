@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="dramaclaw/frontend/public/brand/aigc-dny-mark.svg" alt="DNY-AIGC" width="96" height="96" />
+<img src="app/frontend/public/brand/aigc-dny-mark.svg" alt="DNY-AIGC" width="96" height="96" />
 
 # DNY-AIGC
 
@@ -43,7 +43,7 @@ Tanpa PostgreSQL atau Redis untuk edisi Community: satu host, tiga layanan Docke
 - **Konfigurasi model di UI** — Official / Custom / Hybrid; rahasia tidak diekspos ke browser
 - **Gateway bawaan** — NewAPI lokal idle sampai Anda beralih ke mode Custom atau Hybrid
 - **UI Indonesia-first** — salinan, label, dan alur utama memakai Bahasa Indonesia
-- **Desain sistem DNY** — aksen cyan `#00bdcf`, tipografi Geist, token di `dramaclaw/DESIGN.md`
+- **Desain sistem DNY** — aksen cyan `#00bdcf`, tipografi Geist, token di `app/DESIGN.md`
 
 ---
 
@@ -64,7 +64,7 @@ flowchart LR
 | `api` | 8780 | Backend kreasi & tugas |
 | `newapi` | 3000 | Gateway OpenAI-compatible (bawaan) |
 
-Kode aplikasi utama berada di folder [`dramaclaw/`](dramaclaw/) (pipeline + frontend). Gateway sibling opsional: `dramaclaw-gateway/` (diabaikan git bila belum di-track).
+Kode aplikasi utama: [`app/`](app/). Gateway sibling opsional: folder `gateway/` di samping repo (lihat compose).
 
 ---
 
@@ -75,10 +75,10 @@ Kode aplikasi utama berada di folder [`dramaclaw/`](dramaclaw/) (pipeline + fron
 ```bash
 # 1. Clone
 git clone https://github.com/mydenflix/DNY-AIGC.git
-cd DNY-AIGC/dramaclaw
+cd DNY-AIGC/app
 
 # 2. (Opsional) gateway untuk build dari sumber
-#    taruh checkout gateway di ../dramaclaw-gateway
+#    taruh checkout di ../gateway
 #    atau set DNY_AIGC_GATEWAY_SRC di .env
 
 # 3. Konfigurasi
@@ -94,7 +94,7 @@ docker compose ps
 
 Buka **http://localhost:8080** → Pengaturan → Konfigurasi Model.
 
-Panduan lengkap: [docs/id/getting-started/quickstart.md](dramaclaw/docs/id/getting-started/quickstart.md)
+Panduan lengkap: [docs/id/getting-started/quickstart.md](app/docs/id/getting-started/quickstart.md)
 
 ---
 
@@ -104,7 +104,7 @@ Panduan lengkap: [docs/id/getting-started/quickstart.md](dramaclaw/docs/id/getti
 DNY-AIGC/
 ├── README.md                 ← Anda di sini
 ├── .agents/                  ← skill agen (Hallmark, dll.)
-└── dramaclaw/                ← aplikasi CE
+└── app/                      ← aplikasi CE
     ├── docker-compose.yml    ← build lokal (dny-aigc-local/*)
     ├── frontend/             ← React + Vite (UI)
     ├── src/novelvideo/       ← FastAPI & pipeline
@@ -119,12 +119,12 @@ DNY-AIGC/
 
 | Topik | Tautan |
 | --- | --- |
-| Mulai cepat | [quickstart.md](dramaclaw/docs/id/getting-started/quickstart.md) |
-| Instalasi | [installation.md](dramaclaw/docs/id/getting-started/installation.md) |
-| Konfigurasi model | [configuring-models.md](dramaclaw/docs/id/getting-started/configuring-models.md) |
-| Setup PC lokal | [setup-pc-lokal.md](dramaclaw/docs/id/getting-started/setup-pc-lokal.md) |
-| Pedoman agen | [AGENTS_id.md](dramaclaw/AGENTS_id.md) |
-| Desain visual | [DESIGN.md](dramaclaw/DESIGN.md) |
+| Mulai cepat | [quickstart.md](app/docs/id/getting-started/quickstart.md) |
+| Instalasi | [installation.md](app/docs/id/getting-started/installation.md) |
+| Konfigurasi model | [configuring-models.md](app/docs/id/getting-started/configuring-models.md) |
+| Setup PC lokal | [setup-pc-lokal.md](app/docs/id/getting-started/setup-pc-lokal.md) |
+| Pedoman agen | [AGENTS_id.md](app/AGENTS_id.md) |
+| Desain visual | [DESIGN.md](app/DESIGN.md) |
 
 ---
 
@@ -133,13 +133,13 @@ DNY-AIGC/
 - **Backend:** Python 3.11 · FastAPI · pipeline tugas lokal
 - **Frontend:** React · Vite · Tailwind / shadcn · React Flow
 - **Ops:** Docker Compose · volume lokal CE
-- **Lisensi aplikasi:** Elastic-2.0 (lihat `dramaclaw/LICENSES/`)
+- **Lisensi aplikasi:** Elastic-2.0 (lihat `app/LICENSES/`)
 
 ---
 
 ## Status & kontribusi
 
-Repositori ini adalah **proyek mandiri DNY-AIGC** (adaptasi yang di-rebrand dan dikonfigurasi ulang untuk penggunaan pribadi / tim).
+Repositori ini adalah **proyek mandiri DNY-AIGC**.
 
 Kontribusi eksternal: buka issue atau PR dengan deskripsi perubahan, perintah verifikasi, dan dampak konfigurasi/model jika ada.
 

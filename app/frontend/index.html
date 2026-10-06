@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/png" href="/brand/aigc-dny-mark.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DNY-AIGC — Mesin video AIGC</title>
+    <meta
+      name="description"
+      content="Mesin video AIGC serbaguna: dari naskah sampai potongan akhir dalam satu alur — drama, iklan, video produk, dan lainnya."
+    />
+    <link rel="canonical" href="https://github.com/mydenflix/DNY-AIGC" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DNY-AIGC" />
+    <meta property="og:title" content="DNY-AIGC — Mesin video AIGC" />
+    <meta
+      property="og:description"
+      content="Mesin video AIGC serbaguna: dari naskah sampai potongan akhir dalam satu alur — drama, iklan, video produk, dan lainnya."
+    />
+    <meta property="og:url" content="https://github.com/mydenflix/DNY-AIGC" />
+    <meta property="og:image" content="/brand/aigc-dny-mark.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DNY-AIGC — Mesin video AIGC" />
+    <meta
+      name="twitter:description"
+      content="Mesin video AIGC serbaguna: dari naskah sampai potongan akhir dalam satu alur — drama, iklan, video produk, dan lainnya."
+    />
+    <meta name="twitter:image" content="/brand/aigc-dny-mark.png" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("supertale-app");
+          /* DESIGN.md: theme dark is the persisted product default. */
+          var theme = "dark";
+          if (stored) {
+            var parsed = JSON.parse(stored);
+            if (parsed && parsed.state && parsed.state.theme) {
+              theme = parsed.state.theme;
+            }
+          }
+          var resolved =
+            theme === "system"
+              ? window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light"
+              : theme;
+          document.documentElement.classList.add(resolved);
+          var pathname = window.location.pathname;
+          if (pathname === "/login" || pathname.indexOf("/watch/") === 0) {
+            document.documentElement.classList.add("preauth-shell");
+            document.documentElement.style.backgroundColor = "#181818";
+          }
+        } catch (e) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
